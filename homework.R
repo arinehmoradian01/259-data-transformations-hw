@@ -251,7 +251,7 @@ ds %>%
 
 
 
-
+ 
 ### Question 10 --------
 
 # Look up the dplyr "count" function
