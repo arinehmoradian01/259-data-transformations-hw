@@ -1,5 +1,5 @@
 #PSYC 259 Homework 2 - Data Transformation- Arineh Moradian
-#For full credit, provide answers for at least 7/10
+#For full credit, provide answers for at least 7/10 (10/10)
 
 #List names of students collaborating with: 
 
@@ -175,9 +175,15 @@ ds_filtered <- ds %>%
 
 ds_filtered
 
+#Mcomment: Looks good! You can also do an OR command, or just use the dataframe
 
+ds %>% filter(year == round(ds_sum$min_yr) | 
+                year == round(ds_sum$mean_yr) | 
+                year == round(ds_sum$max_yr) ) %>% arrange(year)
 
-
+ds %>% 
+  filter(year %in% ds_sum) %>% 
+  arrange(year)
 
 ### Question 8 ---------- 
 
